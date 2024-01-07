@@ -265,8 +265,6 @@ flex-shrink: 0;
 
   /* <!---- ABOUT SECTION ----> */
   .about{
-    
-    /* max-height: 647px; */
     display: flex;
     padding: 0 6rem;
     margin-top: 8.75rem;
@@ -280,7 +278,6 @@ flex-shrink: 0;
   .left img{
    width: 100%;
    max-width: 37.5rem;
-   /* max-height: 40.43rem; */
    height: auto;
   }
   .right{
@@ -292,8 +289,6 @@ flex-shrink: 0;
     
   }
   .a-content{
-    /* max-width: 445px;
-    max-height: 452px; */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -349,12 +344,7 @@ margin-left: 0.49rem;
 
 
   /* <!---- SUCCESS SECTION ----> */
-  .container2{
-    /* max-width: 83rem;
-    max-height: 30.6875rem; */
-    /* width: 83rem;
-    height: 30.6875rem; */
-  }
+
 .success::before {
   content: "";
   position: absolute;
@@ -388,7 +378,6 @@ margin-left: 0.49rem;
     padding: 4.5rem 5rem;
     align-items: center;
     width:auto;
-/* height: 30.6875rem; */
 flex-shrink: 0;
 background: var(--colors-brand-secondary);
 margin-top: 8.75rem;
@@ -465,9 +454,7 @@ line-height: 4.875rem;
   align-items: center;
   justify-content: center;
   width: 100%;
-  /* height: 66.5rem; */
   flex-direction: column;
-  /* flex-shrink: 0; */
   margin-top: 8.75rem;
 }
   h2 .head1{
@@ -562,7 +549,6 @@ height: 19.30413rem;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  /* padding: 0 3.5rem; */
   margin: 8.75rem 0 4rem;
 }
 .process p{
@@ -604,7 +590,7 @@ font-family: Golos Text;
 font-size: 0.875rem;
 font-style: normal;
 font-weight: 400;
-line-height: 160%; /* 1.4rem */
+line-height: 160%;
 margin-right: 4rem;
 }
 .p-container{
@@ -628,8 +614,6 @@ margin-right: 4rem;
   background-image: url(media/tesimonialbg.svg);
 background-color: #080F1F;
 background-position: center;
-  /* width: 83rem;
-height: 45.42869rem; */
   align-items: center;
   justify-content: center;
   margin-top: 8.75rem;
@@ -717,18 +701,14 @@ gap: 1rem;
 
 }
 .solution h2{
-  /* width: 22.4375rem; */
-/* height: 3.25rem; */
 margin-bottom: 1rem;
 }
 .solution p{
-  /* width: 22.4375rem; */
   margin-bottom: 2rem;
 }
 .sleft{
   max-width: 37.83769rem;
   height: auto;
-  /* min-width: 28rem; */
 }
 .sleft img{
   
@@ -791,7 +771,6 @@ footer {
   justify-content: space-between;
   flex-wrap: nowrap;
   align-items: flex-start;
-/* height: 34.56rem; */
   border-bottom: 0.0625rem solid #DFE1E5;
 
 }
@@ -1012,15 +991,12 @@ height: 3vw;
 
 /* <!---- ABOUT SECTION ----> */
 .about{
-  /* max-height: 40.43vw; */
   padding: 0 6vw;
   margin-top: 8.75vw;
 gap: 6vw;
 }
 .left img{
  width: 100%;
- /* max-width: 37.5vw;
- max-height: 40.43vw; */
  height: auto;
 }
 .a-content{
@@ -1056,6 +1032,57 @@ height: 1.25vw;
 justify-self: center;
 margin-left: 0.49vw;
 }
+
+
+    /* <!---- SUCCESS SECTION ----> */  
+    .container2{
+      .container2{
+        width: 100%;
+        height: 30.6875vw;
+      }
+      
+    }
+    .success{
+      padding: 4.5vw 5vw;
+      width:100%;
+  background: var(--colors-brand-secondary);
+  margin-top: 8.75vw;
+    }
+    .success h2 .head1{
+      font-size: 2.5vw;
+    }
+    .success h2 .head2{
+      font-size: 2.5vw;
+  margin-left: 3vw;
+    }
+    .boxes{
+      justify-content: center;
+    gap: 2vw;
+    margin-top:4vw;
+    }
+  
+  
+    .boxes h1{
+  
+  font-size: 3.5vw;
+ 
+    }
+    .boxes p{
+    
+  font-size: 1.25vw;
+ 
+    }
+   .boxes .sbox{
+      width: 16.75vw;
+  height: 11.1875vw;
+  padding: 1vw 1.25vw;
+ 
+  
+    }
+    .box1 h1{
+  font-size: 4.5vw;
+ 
+    }
  /* <!---- SERVICES SECTION ----> */
  .services{
   width: 100%;
@@ -1342,92 +1369,8 @@ height: 5.25vw;
 
 
 
-
-
-
-
-
-/* 
-    .Scontainer{
-      justify-content: center;
-    } */
-
-    .container2{
-      .container2{
-        /* max-width: 83rem;
-        max-height: 30.6875rem; */
-        width: 100%;
-        height: 30.6875vw;
-      }
-      
-    }
-    .success{
-      padding: 4.5vw 5vw;
-      width:100%;
-  background: var(--colors-brand-secondary);
-  margin-top: 8.75vw;
-    }
-    .success h2 .head1{
-      font-size: 2.5vw;
-    }
-    .success h2 .head2{
-      font-size: 2.5vw;
-  margin-left: 3vw;
-    }
-    .boxes{
-      justify-content: center;
-    gap: 2vw;
-    margin-top:4vw;
-    }
-  
-  
-    .boxes h1{
-  
-  font-size: 3.5vw;
- 
-    }
-    .boxes p{
-    
-  font-size: 1.25vw;
- 
-    }
-   .boxes .sbox{
-      width: 16.75vw;
-  height: 11.1875vw;
-  padding: 1vw 1.25vw;
- 
-  
-    }
-    .box1 h1{
-  font-size: 4.5vw;
- 
-    }
   }
 
-
-/* 
-  @media only screen and (max-width:1250px){
-    .container{
-      padding: 0;
-    }
-    .about{
-      padding: 0;
-    }
-  }
-  @media only screen and (max-width:1060px){
-    .content #wH1{
-      font-size: 2.5rem;
-   
-    }
-    .content p{
-     
-    }
-    .button{
-     
-    }
-
-   
-  } */
 
   /* -----------for small screen devices------------ */
   @media only screen and (max-width:780px){
@@ -1436,8 +1379,6 @@ height: 5.25vw;
       padding: 0;
       margin: 0;
     }
-
-
 /* <!---- HEADER SECTION ----> */
 header{
   padding: 0 1rem;
@@ -1470,8 +1411,6 @@ flex-shrink: 0;
 nav ul {
   display: none;
 }
-
-
 /* <!---- HERO SECTION ----> */
 .container {
   flex-direction: column-reverse;
@@ -1527,8 +1466,6 @@ flex-shrink: 0;
   margin-bottom: 1.25rem;
 }
 
-
-
   /* <!---- ABOUT SECTION ----> */
   .about{
     margin-top: 4rem;
@@ -1543,8 +1480,6 @@ flex-shrink: 0;
   }
   .left img{
     width: 100%;
-    /* height: 27.0625rem; */
-   
   }
 
   .right{
@@ -1566,7 +1501,6 @@ line-height: 160%
 }
 .about .button{
   width: 100%;
-  /* height: 3rem; */
 }
 
  /* <!---- SUCCESS SECTION ----> */
@@ -1599,12 +1533,7 @@ display: none;
  justify-content: center;
 flex-wrap: wrap;
 gap: 2rem;
-
 }
-
-
-
-
 
 .success h2 .head1{
   color: #FFF;
@@ -1705,18 +1634,6 @@ margin: 1.12rem auto 2.5rem;
 .process .button{
   margin: auto;
 }
-/* .subH{
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  width: 100%; 
-  height: 20rem;
-  border-bottom: 0.0625rem solid#DFE1E5;
-  margin-bottom: 2.5rem;
-} */
-
 
 .process-container{
   display: flex;
@@ -1867,8 +1784,6 @@ gap: 2rem;
 #fn{
   display: none;
 }
-
-
 
 
   }
