@@ -23,7 +23,16 @@ html, body{
     padding: 0 3.5rem;
     margin: 0 auto;
 }
-
+#blue-bg img{
+  width: 72rem;
+  height: 72rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+#blue-bgM{
+  display: none;
+}
 /* <!---- HEADER SECTION ----> */
 header {
     color: #fff;
@@ -420,6 +429,16 @@ footer {
   
 /* -----------for small screen devices------------ */
 @media screen and (max-width: 1440px) and (min-width: 781px){
+  #blue-bg img{
+    width: 72vw;
+    height: 72vw;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  #blue-bgM{
+    display: none;
+  }
   header {
     margin-top: 2vw;
   }
@@ -631,7 +650,15 @@ height: 5.25vw;
     padding: 0;
     margin: 0;
   }
-  
+  #blue-bg img{
+    display: none;
+      }
+      #blue-bgM{
+        display: block;
+        position: absolute;
+        right: 0;
+        z-index: -1;
+      }
   /* <!---- HEADER SECTION ----> */
   header{
   padding: 0 1rem;
