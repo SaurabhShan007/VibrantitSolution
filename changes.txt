@@ -1,0 +1,6 @@
+1- Apply footer section of blog page to all the pages.
+2- There are changes in blog page.
+3-Apply reach for solution of servicesSD page to all the pages.
+4-There are some changes in the font size of headings in servicesSD page, which should be applied to all the other services pages too.
+5- Replace zuari_logo 2.svg with zuari_logo 3.svg in homepage.
+6-There are changes in style.css file which contain button hover effect and hover effect of our services card.
