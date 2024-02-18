@@ -4,3 +4,4 @@
 4-There are some changes in the font size of headings in servicesSD page, which should be applied to all the other services pages too.
 5- Replace zuari_logo 2.svg with zuari_logo 3.svg in homepage.
 6-There are changes in style.css file which contain button hover effect and hover effect of our services card.
+7- I have also added dropdown.html and css file.. which include hover effects and some animations.
