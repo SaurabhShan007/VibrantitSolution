@@ -1,0 +1,116 @@
+import TestimonialsCard from '~/components/TestimonialCard'
+
+import {Swiper, SwiperSlide, SwiperProps} from 'swiper/react'
+import {Autoplay, FreeMode} from 'swiper/modules'
+import 'swiper/css'
+import 'swiper/css/free-mode'
+
+const swiperOpts: Partial<SwiperProps> = {
+  modules: [Autoplay, FreeMode],
+  slidesPerView: 1,
+  breakpoints: {
+    781: {
+      slidesPerView: 'auto',
+    },
+  },
+  spaceBetween: 32,
+  centeredSlides: true,
+  speed: 15000,
+  autoplay: {delay: 1},
+  loop: true,
+  freeMode: true,
+  loopPreventsSliding: true,
+  allowTouchMove: false,
+  preventClicks: true,
+  simulateTouch: false,
+}
+
+export type TestimonialType = {
+  name: string
+  rating: 1 | 2 | 3 | 4 | 5
+  avatar: string
+  content: string
+}
+
+const testimonials: TestimonialType[] = [
+  {
+    name: 'Pranshu Sharma',
+    rating: 5,
+    avatar: 'assets/customers/Erick.png',
+    content:
+      "I recently purchased a gaming computer from this store and I couldn't be happier! The computer runs smoothly and has exceeded my expectations. The staff was knowledgeable and helpful in helping me choose the right one for my needs.",
+  },
+  {
+    name: 'Aditya Kumar',
+    rating: 5,
+    avatar: 'assets/customers/Jonas.png',
+    content:
+      'I was in the market for a new gaming computer and I stumbled upon this store. I am so glad I did! The selection of computers was great and the staff was knowledgeable and helped me find the perfect one for my needs.',
+  },
+  {
+    name: 'Priya Gupta',
+    rating: 5,
+    avatar: 'assets/customers/Betty.png',
+    content:
+      'The customer service at this store is top-notch. I had a few questions about my purchase and the staff was extremely helpful in answering them and making sure I was satisfied with my purchase.',
+  },
+  {
+    name: 'Hemant Biswas',
+    rating: 4,
+    avatar: 'assets/customers/Hansel.png',
+    content:
+      'The prices at this gaming computer store are unbeatable. I was able to get a high-quality computer at an affordable price and I am so happy with my purchase.',
+  },
+  {
+    name: 'Deepti',
+    rating: 4,
+    avatar: 'assets/customers/Janet.png',
+    content:
+      'This store has a great selection of gaming accessories. I was able to find everything I needed to enhance my gaming experience. The staff was knowledgeable and helped me find the right accessories for my computer.',
+  },
+]
+
+const OurCustomersSection = () => {
+  return (
+    <section className="our-customers">
+      <h1 className="title-h">
+        Our <span className="text-accent">happy customers</span> love us
+      </h1>
+      <Swiper
+        id="marquee-1"
+        className="marquee-container"
+        wrapperClass="marquee-wrapper"
+        {...swiperOpts}
+      >
+        {testimonials.map((item, index) => {
+          return (
+            <SwiperSlide key={`marquee-1-slide-${index}`}>
+              {/* TODO Parametrize this card */}
+              <TestimonialsCard {...item} />
+            </SwiperSlide>
+          )
+        })}
+      </Swiper>
+      <Swiper
+        id="marquee-2"
+        className="marquee-container"
+        wrapperClass="marquee-wrapper"
+        {...swiperOpts}
+        autoplay={{
+          delay: 1,
+          reverseDirection: true,
+        }}
+      >
+        {testimonials.map((item, index) => {
+          return (
+            <SwiperSlide key={`marquee-2-slide-${index}`}>
+              <TestimonialsCard {...item} />
+            </SwiperSlide>
+          )
+        })}
+      </Swiper>
+    </section>
+  )
+}
+
+export default OurCustomersSection
